@@ -1,0 +1,20 @@
+{
+    "name": "epic",
+    "version": "0.0.1",
+    "description": "An omega-wf web application.",
+    "main": "server.js",
+    "dependencies": {
+        "omega-wf": "latest"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "repository": "",
+    "keywords": [
+        "omega-wf"
+    ],
+    "author": "Christopher S. Case <chris.case@skewedaspect.com>",
+    "license": "MIT"
+}
