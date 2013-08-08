@@ -24,6 +24,23 @@ module.exports = function(grunt) {
                     'static/css/epic.min.css': ['less/epic.less']
                 }
             }
+        },
+        watch: {
+//            server: {
+//                files: ['*.js', 'lib/**/*.js'],
+//                tasks: ['start'],
+//                options: {
+//                    nospawn: true,
+//                    atBegin: true
+//                }
+//            },
+            less: {
+                files: ['**/*.less'],
+                tasks: ['recess'],
+                options: {
+                    atBegin: true
+                }
+            }
         }
     });
 
@@ -32,4 +49,22 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('build', ['recess']);
+
+    // Restart our node app whenever the code changes.
+    var child;
+    grunt.registerTask('start', function ()
+    {
+        if (child)
+        {
+            child.kill('SIGINT');
+        } // end if
+
+        child = grunt.util.spawn(
+        {
+            cmd: 'node',
+            args: ['server.js']
+        });
+
+        grunt.task.run('watch:server');
+    })
 };
