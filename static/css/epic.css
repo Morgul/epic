@@ -4773,3 +4773,141 @@ td.visible-print {
     display: none !important;
   }
 }
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  display: inline-block;
+  padding: 8px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+button:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+button:hover,
+button:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+button:active,
+button.active {
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+     -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+button.disabled,
+button[disabled],
+fieldset[disabled] button {
+  pointer-events: none;
+  cursor: default;
+  -webkit-opacity: 0.65;
+   -khtml-opacity: 0.65;
+     -moz-opacity: 0.65;
+          opacity: 0.65;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=65);
+      filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+
+button.primary {
+  display: inline-block;
+  padding: 8px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.428571429;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #428bca;
+  border: 1px solid transparent;
+  border-color: #428bca;
+  border-radius: 4px;
+}
+
+button.primary:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+button.primary:hover,
+button.primary:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+button.primary:active,
+button.primary.active {
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+     -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+button.primary.disabled,
+button.primary[disabled],
+fieldset[disabled] button.primary {
+  pointer-events: none;
+  cursor: default;
+  -webkit-opacity: 0.65;
+   -khtml-opacity: 0.65;
+     -moz-opacity: 0.65;
+          opacity: 0.65;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=65);
+      filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+
+button.primary:hover,
+button.primary:focus,
+button.primary:active,
+button.primary.active {
+  background-color: #357ebd;
+  border-color: #3071a9;
+}
+
+button.primary.disabled,
+button.primary[disabled],
+fieldset[disabled] button.primary,
+button.primary.disabled:hover,
+button.primary[disabled]:hover,
+fieldset[disabled] button.primary:hover,
+button.primary.disabled:focus,
+button.primary[disabled]:focus,
+fieldset[disabled] button.primary:focus,
+button.primary.disabled:active,
+button.primary[disabled]:active,
+fieldset[disabled] button.primary:active,
+button.primary.disabled.active,
+button.primary[disabled].active,
+fieldset[disabled] button.primary.active {
+  background-color: #428bca;
+  border-color: #428bca;
+}

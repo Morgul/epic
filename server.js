@@ -4,20 +4,14 @@
 // @module server.js
 // ---------------------------------------------------------------------------------------------------------------------
 
-var path = require('path');
 var app = require('omega-wf').app;
+
+require('./urls');
 
 // ---------------------------------------------------------------------------------------------------------------------
 
-app.router.add(
-    {
-        url: '/static/*',
-        path: path.join(__dirname, 'static')
-    }
-);
-
 // Set the application's name
-app.setName('epic');
+app.setName('EPIC');
 
 // Start the omega-wf app.
 app.listen();

@@ -4,7 +4,8 @@
   "description": "An omega-wf web application.",
   "main": "server.js",
   "dependencies": {
-    "omega-wf": "latest"
+    "omega-wf": "latest",
+    "swig": "~0.14.0"
   },
   "devDependencies": {
     "grunt": "~0.4.1",

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="epic">
+    <head>
+        <meta charset="utf-8">
+        <title>EPIC</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- Turn off IE Compatibility mode, for Persona support -->
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+        <!-- These scripts must be at the start of the page -->
+        <script src="http://code.jquery.com/jquery-2.0.2.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular-resource.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.5.0/ui-bootstrap-tpls.min.js"></script>
+
+        <!-- Application Scripts -->
+        <script src="/client/app.js"></script>
+        <script src="/client/epic/controllers.js"></script>
+        <script src="/client/projects/controllers.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+
+        <!-- Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Telex|Titillium+Web:400,700,600,400italic,600italic,700italic,900,300italic,300,200italic,200' rel='stylesheet' type='text/css'>
+
+        <!-- Vendor Styles -->
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- Application Styles -->
+        <link href="/static/css/epic.min.css" rel="stylesheet">
+
+        <!-- Fav Icon -->
+        <link rel="shortcut icon" href="/client/images/favicon.png" />
+
+        <!--Fix for stupid AngularJS 1.1.5 router behavior -->
+        <!-- See: https://github.com/angular/angular.js/issues/2799 -->
+        <base href="/">
+    </head>
+    <body>
+        <!-- Main Header -->
+        <!--header ng-include="'/partials/header.html'"></header-->
+
+        <!-- Main View -->
+        <div id="main-view" data-ng-view></div>
+
+        <!-- ======================================================================================================= -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/1.2.1/lodash.min.js"></script>
+        <!-- ======================================================================================================= -->
+    </body>
+</html>
