@@ -13,7 +13,7 @@ module.exports = function(grunt) {
             },
             epic: {
                 files: {
-                    'static/css/epic.css': ['less/epic.less']
+                    'static/css/epic.css': ['components/**/less/*.less']
                 }
             },
             min: {
@@ -21,7 +21,7 @@ module.exports = function(grunt) {
                     compress: true
                 },
                 files: {
-                    'static/css/epic.min.css': ['less/epic.less']
+                    'static/css/epic.min.css': ['components/**/less/*.less']
                 }
             }
         },

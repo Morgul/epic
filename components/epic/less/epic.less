@@ -2,9 +2,9 @@
 // The main style sheet for EPIC
 //----------------------------------------------------------------------------------------------------------------------
 
-@import "../vendor/lesselements/elements.less";
-@import "../vendor/bootstrap/less/bootstrap";
-@import "../vendor/flexbox/flexbox";
+@import "../../../vendor/lesselements/elements.less";
+@import "../../../vendor/bootstrap/less/bootstrap";
+@import "../../../vendor/flexbox/flexbox";
 
 // Bootstrap Overrides
 @import "variables";
@@ -15,6 +15,7 @@ body, html
 {
     padding: 0;
     margin: 0;
+    font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 button
@@ -28,6 +29,23 @@ button.primary
     .btn-primary;
 }
 
+h1, h2, h3, h4, h5, h6
+{
+    font-family: "Maven Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: 0;
+}
+
+code, pre
+{
+    font-family: "Source Code Pro", Monaco, Menlo, Consolas, "Courier New", monospace;
+}
+
+code
+{
+    background-color: #F4F4F4;
+    color: #1C441C;
+}
+
 //----------------------------------------------------------------------------------------------------------------------
 // Main Page
 //----------------------------------------------------------------------------------------------------------------------
@@ -35,6 +53,7 @@ button.primary
 #main-view
 {
     //.flexbox;
+    padding: 5px;
 }
 
 //----------------------------------------------------------------------------------------------------------------------

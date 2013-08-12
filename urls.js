@@ -18,22 +18,6 @@ app.router.add(
         path: path.join(__dirname, 'static')
     },
     {
-        url: '/client/*',
-        path: path.join(__dirname, 'client')
-    },
-    {
-        url: '/partials/epic*',
-        path: path.join(__dirname, 'client/epic/partials')
-    },
-    {
-        url: '/partials/projects*',
-        path: path.join(__dirname, 'client/projects/partials')
-    },
-    {
-        url: '/partials/*',
-        path: path.join(__dirname, 'client/partials')
-    },
-    {
         url: '/vendor/*',
         path: path.join(__dirname, 'vendor')
     },

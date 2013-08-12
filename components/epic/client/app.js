@@ -9,8 +9,8 @@ window.app = angular.module("epic", ['ngResource', 'epic.controllers', 'projects
     {
         $locationProvider.html5Mode(true);
         $routeProvider
-            .when('/', {templateUrl: '/partials/epic/welcome.html',   controller: 'WelcomeCtrl'})
-            .when('/:user/:project', {templateUrl: '/partials/projects/project.html',   controller: 'ProjectCtrl'})
+            .when('/', {templateUrl: '/epic/partials/welcome.html',   controller: 'WelcomeCtrl'})
+            .when('/:user/:project', {templateUrl: '/projects/partials/project.html',   controller: 'ProjectCtrl'})
             .otherwise({redirectTo: '/'});
     }]);
 //----------------------------------------------------------------------------------------------------------------------
