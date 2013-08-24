@@ -9148,6 +9148,9 @@ code {
 }
 
 .site-header .brand {
+  position: absolute;
+  right: 110px;
+  left: 0;
   float: left;
   padding: 15px 15px;
   overflow: hidden;
@@ -9167,12 +9170,6 @@ code {
 @media (min-width: 768px) {
   .navbar > .container .site-header .brand {
     margin-left: -15px;
-  }
-}
-
-@media only screen and (max-width: 510px) {
-  .site-header .brand {
-    max-width: 275px;
   }
 }
 
@@ -9217,6 +9214,8 @@ code {
 }
 
 #main-view {
-  padding: 5px;
+  max-width: 1280px;
+  padding: 5px 10px 10px;
+  margin: 0 auto;
 }
 

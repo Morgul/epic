@@ -71,14 +71,9 @@ code
     color: #777;
     white-space: nowrap;
     overflow: hidden;
-}
-
-@media only screen  and (max-width : 510px)
-{
-    .site-header .brand
-    {
-        max-width: 275px;
-    }
+    position: absolute;
+    right: 110px;
+    left: 0;
 }
 
 .site-header .brand.url
@@ -124,7 +119,9 @@ code
 #main-view
 {
     //.flexbox;
-    padding: 5px;
+    padding: 5px 10px 10px;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 //----------------------------------------------------------------------------------------------------------------------
