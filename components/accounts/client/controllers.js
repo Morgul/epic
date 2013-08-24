@@ -1,20 +1,18 @@
 //----------------------------------------------------------------------------------------------------------------------
-// Controllers for EPIC projects
+// Controllers for EPIC accounts
 //
 // @module controllers.js
 //----------------------------------------------------------------------------------------------------------------------
 
-var Controllers = angular.module('projects.controllers', []);
+var Controllers = angular.module('accounts.controllers', []);
 
 //----------------------------------------------------------------------------------------------------------------------
 
-Controllers.controller('ProjectCtrl', function($scope, $routeParams)
+Controllers.controller('ProfileCtrl', function($scope, $routeParams)
 {
+    console.log('HERE!!!!');
     $scope.owner = $routeParams.owner;
-    $scope.$root.$broadcast('owner', $routeParams.owner);
-
-    $scope.project = $routeParams.project;
-    $scope.$root.$broadcast('project', $routeParams.project);
+    $scope.$root.$broadcast('owner', $scope.owner);
 });
 
 //----------------------------------------------------------------------------------------------------------------------

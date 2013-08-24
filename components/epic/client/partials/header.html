@@ -1,0 +1,41 @@
+<div class="site-header" ng-controller="HeaderCtrl">
+    <div class="login">
+        <div class="btn-group">
+            <button type="button" class="primary dropdown-toggle" data-toggle="dropdown">
+                Sign In <i class="icon-caret-down"></i>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#"><i class="icon-github-sign icon-2x"></i> <span class="account">GitHub Account</span></a></li>
+                <li><a href="#"><i class="icon-bitbucket-sign icon-2x"></i> <span class="account">BitBucket Account</span></a></li>
+                <li><a href="#"><i class="icon-google-plus-sign icon-2x"></i> <span class="account">Google Account</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <a ng-if="!project" class="brand" href="/">EPIC</a>
+    <div ng-if="project" class="brand url">
+        <a href="/{{ owner }}/" class="owner">{{ owner }}</a> / <a href="/{{ owner }}/{{ project }}/" class="project">{{ project }}</a>
+    </div>
+</div>
+
+<!--
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">EPIC</a>
+    </div>
+    <div class="navbar-collapse collapse" ng-if="!user">
+        <ul class="nav navbar-nav navbar-right">
+            <li><p class="navbar-text">Sign In: </p></li>
+            <li><button class="btn navbar-btn btn-default"><i class="icon-github-sign icon-large"></i></button></li>
+            <li><button class="btn navbar-btn btn-default"><i class="icon-bitbucket-sign icon-large"></i></button></li>
+            <li><button class="btn navbar-btn btn-default"><i class="icon-google-plus-sign icon-large"></i></button></li>
+        </ul>
+    </div>
+    <p ng-if="user" class="navbar-text pull-right">Signed in as <a href="/{{ user.username }}/">{{ user.fullname }}</a></p>
+</div>
+-->
+

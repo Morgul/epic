@@ -12,14 +12,16 @@
 
         <!-- These scripts must be at the start of the page -->
         <script src="http://code.jquery.com/jquery-2.0.2.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular-resource.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-resource.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.5.0/ui-bootstrap-tpls.min.js"></script>
 
         <!-- Application Scripts -->
         <script src="/epic/app.js"></script>
         <script src="/epic/controllers.js"></script>
         <script src="/projects/controllers.js"></script>
+        <script src="/accounts/controllers.js"></script>
         <script src="/socket.io/socket.io.js"></script>
 
         <!-- Fonts -->
@@ -40,7 +42,7 @@
     </head>
     <body>
         <!-- Main Header -->
-        <!--header ng-include="'/partials/header.html'"></header-->
+        <header ng-include="'/epic/partials/header.html'"></header>
 
         <!-- Main View -->
         <div id="main-view" data-ng-view></div>
@@ -48,6 +50,7 @@
         <!-- ======================================================================================================= -->
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/1.2.1/lodash.min.js"></script>
+        <script src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
         <!-- ======================================================================================================= -->
     </body>
 </html>

@@ -2,8 +2,9 @@
 // The main style sheet for EPIC
 //----------------------------------------------------------------------------------------------------------------------
 
-@import "../../../vendor/lesselements/elements.less";
+@import "../../../vendor/lesselements/elements";
 @import "../../../vendor/bootstrap/less/bootstrap";
+@import "../../../vendor/bootstrap/less/theme";
 @import "../../../vendor/flexbox/flexbox";
 
 // Bootstrap Overrides
@@ -18,14 +19,19 @@ body, html
     font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+body
+{
+    padding-top: 50px;
+}
+
 button
 {
     .btn;
+    .btn-default;
 }
 
 button.primary
 {
-    .btn;
     .btn-primary;
 }
 
@@ -44,6 +50,71 @@ code
 {
     background-color: #F4F4F4;
     color: #1C441C;
+}
+
+//----------------------------------------------------------------------------------------------------------------------
+// Header
+//----------------------------------------------------------------------------------------------------------------------
+
+.site-header
+{
+    .navbar;
+    .navbar-default;
+    .navbar-fixed-top;
+}
+
+.site-header .brand
+{
+    .navbar-brand;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+    font-size: 1.75em;
+    color: #777;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@media only screen  and (max-width : 510px)
+{
+    .site-header .brand
+    {
+        max-width: 275px;
+    }
+}
+
+.site-header .brand.url
+{
+    font-size: 1.25em;
+}
+
+.site-header .login
+{
+    .pull-right;
+    margin-right: 20px;
+}
+
+.site-header .login .dropdown-menu
+{
+    right: 0;
+    left: auto;
+}
+
+.site-header .login p
+{
+    .navbar-text;
+    margin-right: 5px;
+}
+
+.site-header .login button
+{
+    .navbar-btn;
+}
+
+.site-header .login .account
+{
+    display: inline-block;
+    margin-top: 3px;
+    vertical-align: top;
+    font-size: 1.25em;
 }
 
 //----------------------------------------------------------------------------------------------------------------------
